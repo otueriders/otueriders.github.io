@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="refresh" content="5;url=https://discord.gg/GCB4D6txc4">
+  <title>Redirecting...</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #clickMeLink {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div onclick="pageRedirect()" id="clickMeLink">Loading..</div>
+  <script>
+    function pageRedirect() {
+      window.location.href = "https://discord.gg/GCB4D6txc4";
+    }
+    pageRedirect();
+    var clickMeLink = document.getElementById("clickMeLink");
+    setTimeout(function() {
+      clickMeLink.style.display = "block";
+    }, 500);
+
+    setTimeout(function() {
+      var clickMeLink = document.getElementById("clickMeLink");
+      clickMeLink.innerHTML = "Click here!";
+    }, 1500);
+  </script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+python CMS.py
+pause
