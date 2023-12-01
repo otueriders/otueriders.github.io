@@ -1,10 +1,154 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Hello, World!</title>
-</head>
-<body>
-    <h1>Hello, World!</h1>
-    <p>This is a simple HTML page.</p>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>OTU E-Riders - Homepage - Electric Scooters, Bikes and more!</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/jumbotron/">
+    <link href="./assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/colors.css">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+  </head>
+  <body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-color">
+    <div class="container">
+        <a class="navbar-brand" href="./">
+            <img src="scooter_icon.ico" alt="Club Icon" class="club-icon"> OTU E-Riders
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./membership">Membership</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./resources">Resources</a>
+                </li>
+<!--                 <li class="nav-item">
+                    <a class="nav-link" href="./blog">Blog</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="./gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./faq">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./social">Social Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sponsors">Sponsors</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+<main>
+  <div class="container py-4">
+
+    <!-- JUMBOTRON PRIMARY IMAGE -->
+    <div class="mt-3 pt-5 p-5 mb-4 bg-light rounded-3" style="background-image: url('images/front_page.jpg'); background-size: cover; background-position: center;">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold front-page-primary-image-text">Join OTU E-Riders</h1>
+            <p class="col-md-8 fs-4 front-page-primary-image-text">Become a part of the electric mobility revolution with OTU E-Riders, where we explore the future of transportation - micromobility! Our ratified student club is all about electric scooters, e-bikes, and personal electric vehicles (PEVs). Join us to ride, learn, and meet fellow enthusiasts.</p>
+            <a href="./join/" class="btn btn-outline-light btn-lg front-page-primary-btn">Membership Form</a>
+        </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+      <!-- JUMBOTRON LEFT IMAGE -->
+      <div class="col-md-6">
+          <div class="h-100 p-5 text-white bg-dark rounded-3" style="background-image: url('images/front_page_left.jpg'); background-size: cover; background-position: center;">
+              <h2 class="front-page-left-image-text">Upcoming Events</h2>
+              <p class="front-page-left-image-text">Stay tuned for exciting events and activities organized by OTU E-Riders. Whether it's group rides, maintenance and cleaning sessions, or electric scooter races, we've got something for everyone. Join our discord to see the events and mark your calendars to ride with us!</p>
+              <a href="./discord/" class="btn btn-outline-light front-page-primary-btn">Events</a>
+          </div>
+      </div>
+
+      <!-- JUMBOTRON RIGHT IMAGE -->
+      <div class="col-md-6">
+          <div class="h-100 p-5 bg-light border rounded-3" style="background-image: url('images/front_page_right.jpg'); background-size: cover; background-position: center;">
+              <h2 class="front-page-right-image-text">Join the Conversation</h2>
+              <p class="front-page-right-image-text">Have questions, ideas, or experiences to share? Join our Discord community and be a part of the conversation. Connect with club members, ask for recommendations, or share your latest e-vehicle adventures. Together, we're driving the future of sustainable mobility.</p>
+              <a href="./discord/" class="btn btn-outline-light front-page-primary-btn">OTU E-Riders Discord</a>
+          </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="mt-4 text-white footer footer-color">
+    <div class="container pt-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <h3>About OTU E-Riders</h3>
+                <p>OTU E-Riders is dedicated to promoting electric scooters, e-bikes, and personal electric vehicles at Ontario Tech U in Oshawa, Ontario!</p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:OTUERiders@gmail.com?subject=OTU%20E-Riders%20-%20Contact" class="text-white">OTUERiders@gmail.com</a></p>
+                <p>Discord: <a href="./discord/" class="text-white">OTU E-Riders Discord</a></p>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <h3>Connect with Us</h3>
+                <ul class="list-unstyled">
+                    <li><a href="./join/" class="text-white">Join us!</a></li>
+                    <li><a href="https://linktr.ee/otueriders" class="text-white">Linktree</a></li>
+                    <li><a href="./discord/" class="text-white">Discord</a></li>
+                    <li><a href="https://www.instagram.com/otu_eriders/" class="text-white">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p id="copyright" class="text-center">&copy; 2023 OTU E-Riders. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Script to update date in footer above -->
+<script>
+    var currentYear = new Date().getFullYear();
+    var copyrightElement = document.getElementById("copyright");
+    copyrightElement.innerHTML = "Copyright &copy; " + currentYear + " OTU E-Riders.";
+</script>
+
+
+    
+  </body>
 </html>
